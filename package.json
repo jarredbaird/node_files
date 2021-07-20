@@ -1,0 +1,15 @@
+{
+  "name": "31.4_node_intro",
+  "version": "1.0.0",
+  "description": "31.4 Exercise",
+  "main": "app.js",
+  "scripts": {
+    "test": "hello"
+  },
+  "repository": {
+    "type": "git",
+    "url": "31.4_node_intro"
+  },
+  "author": "Jarred Baird",
+  "license": "ISC"
+}
