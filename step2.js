@@ -1,4 +1,6 @@
 const fs = require("fs");
+const axios = require("axios");
+const process = require("process");
 const ref = process.argv[process.argv.length - 1];
 
 function cat(path) {
@@ -11,4 +13,13 @@ function cat(path) {
   });
 }
 
-cat(ref);
+async function webCat(url) {
+  let response = await axios.get(url);
+  console.log(response.data);
+}
+
+if (ref.includes("http")) {
+  webCat(ref);
+} else {
+  cat(ref);
+}

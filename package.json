@@ -11,5 +11,8 @@
     "url": "31.4_node_intro"
   },
   "author": "Jarred Baird",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
 }
